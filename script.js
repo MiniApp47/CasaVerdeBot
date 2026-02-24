@@ -36,106 +36,173 @@ document.addEventListener('DOMContentLoaded', function () {
     // --- CONFIGURATION DES LIENS DE CONTACT ---
     const contactLinks = [
         {
-            name: 'LUFFA 📲',
-            url: 'https://callup.luffa.im/c/Rr4qpxaFto1',
-            id: 'signal',
-            className: 'signal', // Il faudra peut-être ajouter ce CSS (Jaune)
-            text: "LUFFA 📲"
-        },
-        {
-            name: 'CANAL TÉLÉGRAM 🌐',
-            url: 'https://t.me/+EI3cT2hBbR82MDc0',
-            id: 'telegram-main',
-            className: 'telegram', // Garde le style Bleu Telegram
-            text: "CANAL TÉLÉGRAM 🌐"
-        },
-        {
-            name: 'CANAL POTATO 🥔',
-            url: 'https://dympt.org/PlanetDrop84',
-            id: 'potato-main',
-            className: 'potato', // Garde le style Marron/Doré Potato
-            text: "CANAL POTATO 🥔"
-        },
-        {
-            name: 'CONTACT TELEGRAM 💬',
-            url: 'https://t.me/COFFEE_FOURCHE',
+            name: '✅ CANAL TELEGRAM ✅',
+            url: 'https://t.me/+1Bta_gUn1n4zODY0',
             id: 'telegram-secours',
             className: 'secours',
-            text: "CONTACT TELEGRAM 💬"
+            text: "✅ CANAL TELEGRAM ✅"
         },
         {
-            name: 'WHATSAPP 📞',
-            url: 'https://wa.me/3602744423',
+            name: '💜 LUFFA 💜',
+            url: 'https://callup.luffa.im/c/T9saE1ig4Lc',
+            id: 'luffa-main',
+            className: 'luffa', // Il faudra peut-être ajouter ce CSS (Jaune)
+            text: "💜 LUFFA 💜"
+        },
+        {
+            name: '📡 SIGNAL 📡',
+            url: 'https://signal.me/#eu/Mhq6hOkKYobfdYTvkzalmEKmtr71IxpE0GcZZ23uC_Vfa2ABrntMwoTu4hfypC1_',
+            id: 'signal-main',
+            className: 'signal', // Garde le style Bleu Telegram
+            text: "📡 SIGNAL 📡"
+        },
+        {
+            name: '💚 WHATSAPP 💚',
+            url: 'https://wa.me/33759010537',
             id: 'whatsapp',
             className: 'whatsapp', // Il faudra peut-être ajouter ce CSS (Jaune)
-            text: "WHATSAPP 📞"
+            text: "💚 WHATSAPP 💚"
+        },
+        {
+            name: '💻 INSTAGRAM 💻',
+            url: 'https://www.instagram.com/casaaaverdeee?igsh=MXFneXNpbHpvNGV6dA%3D%3D&utm_source=qr',
+            id: 'instagram-main',
+            className: 'instagram', // Garde le style Marron/Doré Potato
+            text: "💻 INSTAGRAM 💻"
         },
     ];
 
-    // --- DONNÉES DE L'APPLICATION (PISTACHIOBOT) ---
-    const appData = [
-        // ============================================================
-        // CATEGORIE 2 : HASH 🍫
-        // ============================================================
-        {
-            id: 'HASH',
-            name: '🍫 HASH',
-            type: 'Hash',
-            quality: '🍫 Hashish',
-            image: 'CategHash.png',
+// --- DONNÉES DE L'APPLICATION (CASAVERDE) ---
+const appData = [
+    // ============================================================
+    // CATEGORIE 1 : HASH 🍫
+    // ============================================================
+    {
+        id: 'HASH',
+        name: '🇲🇦 HASH 🇺🇸',
+        type: 'Hash',
+        quality: '🇲🇦 HASH 🇺🇸',
+        image: 'CategHash.png',
 
-            farms: [
-                // 1. JAUNE CRÉMEUX 🍯
-                {
-                    id: 'DHF 🔬',
-                    name: 'DHF 🔬',
-                    image: '',
-                    badgeText: '',
-                    products: [
-                       /*  {
-                            id: 'Mousseux',
-                            flag: '🇪🇸',
-                            name: 'Jaune Mousse 🌰',
-                            farm: '🌾 No Farm 🌾',
-                            promoEligible: true,
-                            type: 'Hash',
-                            image: 'ProductOg1.png',
-                            video: 'VideoOg1.mp4',
-                            description: '✨ Nouveauté exclusive ✨ \n\n Super mousseux premium disponible dès maintenant.\n Texture onctueuse 💎',
-                            tarifs: [
-                                { weight: '25g', price: 80.00 },
-                                { weight: '50g', price: 140.00 },
-                                { weight: '100g', price: 250.00 },
-                            ]
-                        },
-                        {
-                            id: 'Halloween',
-                            flag: '🇪🇸',
-                            name: 'Halloween 🎃',
-                            farm: '🌾 No Farm 🌾',
-                            promoEligible: true,
-                            type: 'Hash',
-                            image: 'ProductHalloween.png',
-                            video: 'VideoHalloween.mp4',
-                            description: '🚀 Nouveauté exclusive 🚀 \n\n Super mousseux premium disponible dès maintenant.\n Texture onctueuse, qualité certifié  💎 ✅',
-                            tarifs: [
-                                { weight: '25g', price: 80.00 },
-                                { weight: '50g', price: 140.00 },
-                                { weight: '100g', price: 250.00 },
-                            ]
-                        } */
-                    ]
-                },
+        farms: [
+            {
+                id: 'mousseux',
+                name: '🇲🇦 Mousseux 🇺🇸',
+                image: '', // Tu pourras ajouter une image ici plus tard
+                products: []
+            },
+            {
+                id: 'prenium_filtred',
+                name: '🇲🇦 Prenium filtred 🇲🇦',
+                image: '',
+                products: []
+            },
+            {
+                id: 'frozen',
+                name: '🇲🇦 Frozen 🇲🇦',
+                image: '',
+                products: []
+            },
+            {
+                id: 'static',
+                name: '🇲🇦 Static 🇲🇦',
+                image: '',
+                products: []
+            },
+            {
+                id: 'static_usa',
+                name: '🇺🇸 Static usa 🇩🇪',
+                image: '',
+                products: []
+            },
+            {
+                id: 'piatella',
+                name: '🇩🇪 Piatella 🇩🇪',
+                image: '',
+                products: []
+            }
+        ]
+    },
 
-           
-                // 5. Filtrer  ❄️
-                {
-                    id: 'LA SOURCE 👨‍🌾',
-                    name: 'LA SOURCE 👨‍🌾',
-                    image: '',
-                    badgeText: '',
-                    products: [
-                        /* {
+    // ============================================================
+    // CATEGORIE 2 : WEED 🌿
+    // ============================================================
+    {
+        id: 'Weed',
+        name: 'FLEURS 🇪🇸🇳🇱🇺🇸',
+        type: 'Weed',
+        quality: 'FLEURS 🇪🇸🇳🇱🇺🇸',
+        image: 'CategWeed.png',
+
+        farms: [
+            {
+                id: 'perfecto_spania',
+                name: '🇪🇸 Perfecto Spania 🇪🇸',
+                image: '',
+                products: []
+            },
+            {
+                id: 'prima_hollandia',
+                name: '🇳🇱 Prima hollandia 🇳🇱',
+                image: '',
+                products: []
+            },
+            {
+                id: 'great_canada',
+                name: '🇨🇦 Great Canada 🇨🇦',
+                image: '',
+                products: []
+            },
+            {
+                id: 'bangers_usa',
+                name: '🇺🇸 Bangers USA 🇺🇸',
+                image: '',
+                products: []
+            }
+        ]
+    },
+
+    // ============================================================
+    // CATEGORIE 3 : CANDY / EDIBLES 🍬
+    // ============================================================
+    {
+        id: '🇨🇦 CANDY 🇺🇸',
+        name: '🇨🇦 CANDY 🇺🇸',
+        type: '🇨🇦 CANDY 🇺🇸',
+        quality: '🇨🇦 CANDY 🇺🇸',
+        image: 'Categcandy.png',
+
+        farms: [
+            {
+                id: 'space_cake',
+                name: '🧁 Space cake 🧁',
+                image: '',
+                products: []
+            },
+            {
+                id: 'vap_thc',
+                name: '🚬 Vap thc 🚬',
+                image: '',
+                products: []
+            },
+            {
+                id: 'gummies',
+                name: '🧸 Gummies 🧸',
+                image: '',
+                products: []
+            },
+            {
+                id: 'prerolls_donuts',
+                name: '🍩 Pre Rolls / Donuts 🍩',
+                image: '',
+                products: []
+            }
+        ]
+    },
+];
+
+
+    /* {
                             id: 'Cocolato 🍫',
                             flag: '💎',
                             name: 'Cocolato 🍫',
@@ -305,17 +372,6 @@ document.addEventListener('DOMContentLoaded', function () {
                                 { weight: '50g', price: 370.00 },
                             ]
                         } */
-                    ]
-                }
-      
-     
-               
-            ]
-        },
-
-       
-   
-    ];
 
     // --- VARIABLES D'ÉTAT ---
     let cart = [];
@@ -466,7 +522,7 @@ document.addEventListener('DOMContentLoaded', function () {
             backButton.innerHTML = `<svg width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg> ${category.name}`;
             backButton.style.cssText = `
             border: none;
-            color: white;
+            color: #2c2c2c;
             padding: 40px;
             font-weight: 700;
             cursor: pointer;
@@ -475,12 +531,12 @@ document.addEventListener('DOMContentLoaded', function () {
             margin-top: 3vh;
             font-family: Copperplate;
             height: 7vh;
-            font-size: 1.8vh;
+            font-size: 2.5vh;
             width: 100%;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background: linear-gradient(182deg, #480092, transparent);
+            background: linear-gradient(182deg, #043724, #ffcc003b);
                         border-radius: 10px;`;
 
             filterContainer.prepend(backButton);
@@ -509,7 +565,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             backButton.style.cssText = `
             border: none;
-            color: white;
+            color: #2c2c2c;
             padding: 40px;
             font-weight: 700;
             cursor: pointer;
@@ -518,12 +574,12 @@ document.addEventListener('DOMContentLoaded', function () {
             margin-top: 3vh;
             font-family: Copperplate;
             height: 7vh;
-            font-size: 1.8vh;
+            font-size: 2.5vh;
             width: 100%;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background: linear-gradient(182deg, #480092, transparent);
+            background: linear-gradient(182deg, #043724, #ffcc003b);
             border-radius: 10px;`;
 
             filterContainer.prepend(backButton);
@@ -555,7 +611,7 @@ document.addEventListener('DOMContentLoaded', function () {
               ><path fill="currentColor" d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>  ${farm.name}`;
             backButton.style.cssText = `
             border: none;
-            color: white;
+            color: #2c2c2c;
             padding: 40px;
             font-weight: 700;
             cursor: pointer;
@@ -564,12 +620,12 @@ document.addEventListener('DOMContentLoaded', function () {
             margin-top: 3vh;
             font-family: Copperplate;
             height: 7vh;
-            font-size: 1.8vh;
+            font-size: 2.5vh;
             width: 100%;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background: linear-gradient(182deg, #480092, transparent);
+            background: linear-gradient(182deg, #043724, #ffcc003b);
                         border-radius: 10px;`;
 
             filterContainer.prepend(backButton);
@@ -1118,7 +1174,7 @@ function renderProductListSimple(categoryId) {
         contactBtn.classList.remove('secondary-action-btn'); // Enlève le gris
         contactBtn.classList.add('main-action-btn');      // Met le rouge (ou couleur principale)
         contactBtn.disabled = false;                      // Active le clic
-        contactBtn.innerHTML = 'CONFIRMER SUR WHATSAPP 📞'; // Change le texte
+        contactBtn.innerHTML = '🛰️ CONFIRMER SUR WHATSAPP 🛰️'; // Change le texte
     }
 
     showPage('page-confirmation');
@@ -1616,11 +1672,11 @@ function renderProductListSimple(categoryId) {
             // La gestion des classes 'active' est maintenant dans showPage
         }
 
-        // Clic sur le bouton du panier
-        if (target.closest('#home-cart-button')) {
-            renderCart();
-            showPage('page-cart');
-        }
+       // Clic sur N'IMPORTE QUEL bouton du panier
+       if (target.closest('.cart-button')) {
+        renderCart();
+        showPage('page-cart');
+    }
 
         // Clic sur "Commander"
         if (target.closest('#checkout-button')) {
@@ -1645,7 +1701,7 @@ function renderProductListSimple(categoryId) {
     if (target.closest('#confirm-order-button')) {
 
         // 1. TON NUMÉRO WHATSAPP (Format international sans le +)
-        const myPhoneNumber = '33602744423'; 
+        const myPhoneNumber = '33759010537'; 
         
         // 2. On prépare le message
         let message = formatOrderMessage();
