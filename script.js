@@ -170,7 +170,7 @@ const appData = [
         name: '🇨🇦 CANDY 🇺🇸',
         type: '🇨🇦 CANDY 🇺🇸',
         quality: '🇨🇦 CANDY 🇺🇸',
-        image: 'Categcandy.png',
+        image: 'CategCandy.png',
 
         farms: [
             {
