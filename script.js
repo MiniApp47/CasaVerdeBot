@@ -136,7 +136,56 @@ const appData = [
                 id: 'frozen',
                 name: '💎 Frozen 💎',
                 image: '',
-                products: []
+                products: [
+                       {
+                        id: 'Orange Bud 🍊',
+                        flag: '🇲🇦',
+                        name: 'Orange Bud 🍊',
+                        farm: 'Gaz N Fruit ⚠️',
+                        promoEligible: true,
+                        type: 'Filtrer',
+                        image: 'ProductOrange.jpg',
+                        video: 'VideoOrange.mov',
+                        description: '🫒 Olive 10g \n curé sec, pétant ⚡️🤩 \n\n ✨ Arômes : orange 🍊 • agrumes sucrés 🍬 • zesty ⚡ \n 👃 Odeur : puissante, propre 💥 \n 💎 Aspect : olive compacte • sèche • résine brillante ❄️  \n 👅 Goût : fruité explosif, fidèle 🔥\n 🚀 Effets : euphorie 😄 → relaxation 😌 → défonce nette 😵‍💫\n\n Orange Bud premium : goût intense, effet solide, top qualité. 🍊💎🔥',
+                        tarifs: [
+                            { weight: '10g', price: 120.00 },
+                            { weight: '20g', price: 220.00 },
+                            { weight: '30g', price: 330.00 },
+                        ]
+                    },
+                    {
+                        id: 'Blue Magic💙',
+                        flag: '🇲🇦',
+                        name: 'Blue Magic💙',
+                        farm: 'Gaz N Fruit ⚠️',
+                        promoEligible: true,
+                        type: 'Filtrer',
+                        image: 'ProductBlue.jpg',
+                        video: 'VideoBlue.mov',
+                        description: '🤯 Olive 10g curé sec/pétant 🤯 \n ✨ Arômes : fruits bleus 🫐 • bonbon 🍬 • crémeux 🍦 • léger gassy ⛽ \n👃 Odeur : sucrée, intense, très gourmande 💥 \n 💎 Aspect : olive compacte • sèche parfaite • résine brillante ❄️ \n 👅 Goût : fruité doux, long en bouche 🔥 \n🚀 Effets : euphorie 😄 → relaxation 😌 → défonce marquée 😵‍💫   \n\n Blue Magic premium : gourmande, puissante et ultra terpénique. 💎🔥',
+                        tarifs: [
+                            { weight: '10g', price: 120.00 },
+                            { weight: '20g', price: 220.00 },
+                            { weight: '30g', price: 330.00 },
+                        ]
+                    },
+                    {
+                        id: 'Gelato 41 💚',
+                        flag: '🇲🇦',
+                        name: 'Gelato 41 💚',
+                        farm: 'Gaz N Fruit ⚠️',
+                        promoEligible: true,
+                        type: 'Filtrer',
+                        image: 'ProductGelato.jpg',
+                        video: 'VideoGelato.mov',
+                        description: '💎 Frozen Sift Premium — Olive 10g (curé sec, pétant)\n ✨ Arômes : crème sucrée 🍦 • notes dessert 🍰 • touche gassy légère ⛽\n 👃 Odeur : propre, gourmande et puissante 💥\n 💎 Aspect : olive verte compacte • sèche parfaite • résine brillante ❄️\n 👅 Goût : crémeux, doux, très terpénique 🔥\n 🚀 Effets : euphorie 😄 → relaxation profonde 😌 → défonce solide 😵‍💫\n\n Un Gelato 41 premium, gourmand et puissant, avec un équilibre parfait goût / effet. 💎🔥',
+                        tarifs: [
+                            { weight: '10g', price: 120.00 },
+                            { weight: '20g', price: 220.00 },
+                            { weight: '30g', price: 330.00 },
+                        ]
+                    },
+                ]
             },
             {
                 id: 'static',
@@ -175,34 +224,12 @@ const appData = [
                             { weight: '10g', price: 160.00 },
                             { weight: '20g', price: 300.00 },
                         ]
-                    },
-                    {
-                        id: 'Orange Bud 🍊',
-                        flag: '🇲🇦',
-                        name: 'Orange Bud 🍊',
-                        farm: 'Gaz N Fruit ⚠️',
-                        promoEligible: true,
-                        type: 'Filtrer',
-                        image: 'ProductOrange.jpg',
-                        video: 'VideoOrange.mov',
-                        description: '✨ Arômes : fruits sucrés 🍓 • crème dessert 🍰 • touche gassy ⛽\n 💎 Qualité : fleurs denses • ultra résineuses • couleurs violettes/rouges\n⚡ Effets : euphorie 😄 → relaxation 😌\n 🔥 Style : gourmand • moderne • premium\n\n Une variété riche, puissante et élégante, parfaite pour les amateurs de saveurs sucrées avec du caractère. 💜',
-                        tarifs: [
-                            { weight: '5g', price: 90.00 },
-                            { weight: '10g', price: 160.00 },
-                            { weight: '20g', price: 300.00 },
-                        ]
-                    },
+                    }
                 ]
             },
             {
                 id: 'static_usa',
                 name: '🇺🇸 Static usa 🇺🇸',
-                image: '',
-                products: []
-            },
-            {
-                id: 'piatella',
-                name: '🌕 Piatella 🌕',
                 image: '',
                 products: []
             }
@@ -837,6 +864,19 @@ function updateFarmFilter(categoryId, subCategoryId = null) {
             productListContainer.appendChild(card);
         });
     }
+
+    // Quand toute la page (images comprises) est chargée
+window.addEventListener('load', () => {
+    // Optionnel : On ajoute un petit délai de 300ms pour bien voir la fin de l'animation
+    setTimeout(() => {
+        const loadingScreen = document.getElementById('loading-screen');
+        if (loadingScreen) {
+            // Grâce à la transition CSS, ça va faire un fondu propre de 0.6s
+            loadingScreen.style.opacity = '0';
+            loadingScreen.style.visibility = 'hidden';
+        }
+    }, 1500); 
+});
 
     // --- NOUVELLE FONCTION ---
     // Affiche la liste des FARMS pour une catégorie
