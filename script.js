@@ -87,37 +87,122 @@ const appData = [
         farms: [
             {
                 id: 'mousseux',
-                name: '🇲🇦 Mousseux 🇺🇸',
+                name: '🍧 Mousseux 🍧',
                 image: '', // Tu pourras ajouter une image ici plus tard
                 products: []
             },
             {
                 id: 'prenium_filtred',
-                name: '🇲🇦 Prenium filtred 🇲🇦',
+                name: '🎯 Prenium filtred 🎯',
                 image: '',
-                products: []
+                products: [
+                    {
+                        id: 'Sunset Sherbet 🌅',
+                        flag: '🇺🇸',
+                        name: 'Sunset Sherbet 🌅',
+                        farm: 'DHF 🍹',
+                        promoEligible: true,
+                        type: 'Filtrer',
+                        image: 'ProductSunset.jpg',
+                        video: 'VideoSunset.mov',
+                        description: '💎 Type : 120u Premium \n\n ✨ Arômes : fruits sucrés 🍊 • agrumes 🍋 • crème onctueuse 🍦 • touche gassy légère ⛽\n 💎 Qualité : extraction fine 120u • très propre • riche en terpènes • texture sableuse premium\n⚡ Effets : euphorie douce 😄 → relaxation chaleureuse 😌 → bien-être profond 🌙\n 🔥 Style : gourmand • terpénique • haut de gamme\n\n Un produit élégant et savoureux, combinant puissance maîtrisée et profil dessert intense, parfait pour les amateurs de résines premium. ✨',
+                        tarifs: [
+                            { weight: '10g', price: 80.00 },
+                            { weight: '25g', price: 180.00 },
+                            { weight: '50g', price: 250.00 },
+                            { weight: '100g', price: 470.00 },
+                        ]
+                    },
+                    {
+                        id: 'Tropicali 🌴',
+                        flag: '🇺🇸',
+                        name: 'Tropicali 🌴',
+                        farm: 'DHF 🍹',
+                        promoEligible: true,
+                        type: 'Filtrer',
+                        image: 'ProductTropi.jpg',
+                        video: 'VideoTropi.mov',
+                        description: '💎 Type : 120u Premium \n\n ✨ Arômes : explosion de fruits tropicaux 🍍🥭 • agrumes sucrés 🍊 • notes exotiques intenses\n 💎 Qualité : extraction 120u ultra propre • texture parfaite • aspect clair et résineux • très riche en terpènes\n👃 Odeur : extrêmement prononcée — parfum fruité qui remplit instantanément la pièce\n 👅 Goût : fidèle à l’odeur, long en bouche, sucré et exotique\n ⚡ Effets : euphorie rapide 😄 → relaxation agréable 😌 → sensation premium durable ✨\n  🔥 Puissance : élevée avec une grande richesse aromatique\n\n Un 120u exceptionnel, aussi impressionnant par son odeur que par son goût et son visuel, destiné aux amateurs de résines haut de gamme et de profils fruités explosifs. 💎🌈',
+                        tarifs: [
+                            { weight: '10g', price: 80.00 },
+                            { weight: '25g', price: 180.00 },
+                            { weight: '50g', price: 250.00 },
+                            { weight: '100g', price: 470.00 },
+                        ]
+                    },
+                ]
             },
             {
                 id: 'frozen',
-                name: '🇲🇦 Frozen 🇲🇦',
+                name: '💎 Frozen 💎',
                 image: '',
                 products: []
             },
             {
                 id: 'static',
-                name: '🇲🇦 Static 🇲🇦',
+                name: '🐉 Static 🐉',
                 image: '',
-                products: []
+                products: [
+                    {
+                        id: 'Red Velvet 🛑',
+                        flag: '🇲🇦',
+                        name: 'Red Velvet 🛑',
+                        farm: 'Gaz N Fruit ⚠️',
+                        promoEligible: true,
+                        type: 'Filtrer',
+                        image: 'ProductRed.jpg',
+                        video: 'VideoRed.mov',
+                        description: '✨ Arômes : fruits sucrés 🍓 • crème dessert 🍰 • touche gassy ⛽\n 💎 Qualité : fleurs denses • ultra résineuses • couleurs violettes/rouges\n⚡ Effets : euphorie 😄 → relaxation 😌\n 🔥 Style : gourmand • moderne • premium\n\n Une variété riche, puissante et élégante, parfaite pour les amateurs de saveurs sucrées avec du caractère. 💜',
+                        tarifs: [
+                            { weight: '5g', price: 90.00 },
+                            { weight: '10g', price: 160.00 },
+                            { weight: '20g', price: 300.00 },
+                        ]
+                    },
+                    {
+                        id: 'Donny Burger 🍔',
+                        flag: '🇲🇦',
+                        name: 'Donny Burger 🍔',
+                        farm: 'Gaz N Fruit ⚠️',
+                        promoEligible: true,
+                        type: 'Filtrer',
+                        image: 'ProductDonny.jpg',
+                        images: ['ProductDonny2.jpg',],
+                        video: 'VideoDonny.mov',
+                        description: '💨 Arômes : gassy puissant ⛽ • terreux 🌿 • poivré 🌶️ • touche skunk \n 💎 Qualité : têtes compactes • très résineuses • aspect givré ❄️\n ⚡ Effets : montée lourde 🧠 → relaxation extrême 🛋️ → effet “scotché” 🚀\n 🔥 Puissance : très élevée — réservé aux habitués\n\n 🍔⚡️Une variété brute et redoutable, connue pour sa défonce massive et son effet couch-lock intense. Parfaite pour ceux qui recherchent une puissance maximale et une détente profonde. 💥',
+                        tarifs: [
+                            { weight: '5g', price: 90.00 },
+                            { weight: '10g', price: 160.00 },
+                            { weight: '20g', price: 300.00 },
+                        ]
+                    },
+                    {
+                        id: 'Orange Bud 🍊',
+                        flag: '🇲🇦',
+                        name: 'Orange Bud 🍊',
+                        farm: 'Gaz N Fruit ⚠️',
+                        promoEligible: true,
+                        type: 'Filtrer',
+                        image: 'ProductOrange.jpg',
+                        video: 'VideoOrange.mov',
+                        description: '✨ Arômes : fruits sucrés 🍓 • crème dessert 🍰 • touche gassy ⛽\n 💎 Qualité : fleurs denses • ultra résineuses • couleurs violettes/rouges\n⚡ Effets : euphorie 😄 → relaxation 😌\n 🔥 Style : gourmand • moderne • premium\n\n Une variété riche, puissante et élégante, parfaite pour les amateurs de saveurs sucrées avec du caractère. 💜',
+                        tarifs: [
+                            { weight: '5g', price: 90.00 },
+                            { weight: '10g', price: 160.00 },
+                            { weight: '20g', price: 300.00 },
+                        ]
+                    },
+                ]
             },
             {
                 id: 'static_usa',
-                name: '🇺🇸 Static usa 🇩🇪',
+                name: '🇺🇸 Static usa 🇺🇸',
                 image: '',
                 products: []
             },
             {
                 id: 'piatella',
-                name: '🇩🇪 Piatella 🇩🇪',
+                name: '🌕 Piatella 🌕',
                 image: '',
                 products: []
             }
@@ -151,7 +236,44 @@ const appData = [
                 id: 'great_canada',
                 name: '🇨🇦 Great Canada 🇨🇦',
                 image: '',
-                products: []
+                products: [
+                    {
+                        id: '💜 PURPLE PUNCH 🥊',
+                        flag: '🇺🇸',
+                        name: '💜 PURPLE PUNCH 🥊',
+                        farm: 'CasaSelection 🧞',
+                        promoEligible: true,
+                        type: 'Filtrer',
+                        image: 'ProductPunch.jpg',
+                        video: 'VideoPunch.mov',
+                        description: '💜 Couleurs : Violet profond mêlé de vert foncé, avec pistils orange éclatants.\n ❄️ Aspect : Ultra résineuse, texture dense et compacte, effet “givré”.\n 🍇 Arôme : Raisin sucré, baies mûres, fond légèrement terreux et crémeux.\n 🧘‍♂️ Effet (décrispration) :\n  • Relâchement musculaire progressif\n  • Sensation de lourdeur agréable\n  • Calme mental, stress qui descend doucement\n  • Idéale en fin de journée \n\n 🇨🇦 Version “Cali Canadienne” \n\n Quand elle est cultivée en style Cali premium au Canada, on retrouve souvent :\n ✔️ Manucure très propre\n ✔️ Têtes très compactes\n ✔️ Taux de résine élevé\n ✔️ Profil terpénique intense et sucré \n\n ✨ En résumé : une variété parfaite pour une décompression profonde, ambiance chill, musique douce, détente totale.',
+                        tarifs: [
+                            { weight: '5g', price: 50.00 },
+                            { weight: '10g', price: 90.00 },
+                            { weight: '25g', price: 220.00 },
+                            { weight: '50g', price: 400.00 },
+                            { weight: '100g', price: 650.00 },
+                        ]
+                    },
+                    {
+                        id: '🍩 Zkittlez ✘ Gélato 🍦',
+                        flag: '🇺🇸',
+                        name: '🍩 Zkittlez ✘ Gélato 🍦',
+                        farm: 'CasaSelection 🧞',
+                        promoEligible: true,
+                        type: 'Filtrer',
+                        image: 'ProductZG.jpg',
+                        video: 'VideoZG.mov',
+                        description: '💚💜 Couleurs : Mélange éclatant de vert clair et de violet profond, avec des pistils orange vif.\n ❄️ Aspect : Ultra givrée, recouverte d’une couche épaisse de trichomes brillants.\n 💎 Structure : Têtes compactes, rondes et denses, manucure propre style Cali premium.\n\n 🍭🍦 Arômes\n  • Bonbon tropical (héritage Zkittlez)\n  • Notes crémeuses et sucrées (héritage Gelato)\n  • Légère touche terreuse / vanillée en fond\n\n 🧠 Profil général\n • Montée euphorique et joyeuse\n • Sensation relaxante progressive\n  • Hybride équilibrée, douce mais puissante\n\n 🌈 En résumé : une fleur colorée, sucrée et élégante, mélange parfait entre le côté candy fruité et la crème onctueuse.',
+                        tarifs: [
+                            { weight: '5g', price: 50.00 },
+                            { weight: '10g', price: 90.00 },
+                            { weight: '25g', price: 220.00 },
+                            { weight: '50g', price: 400.00 },
+                            { weight: '100g', price: 650.00 },
+                        ]
+                    },
+                ]
             },
             {
                 id: 'bangers_usa',
