@@ -75,6 +75,40 @@ document.addEventListener('DOMContentLoaded', function () {
 // --- DONNÉES DE L'APPLICATION (CASAVERDE) ---
 const appData = [
     // ============================================================
+    // CATEGORIE 4 : FROZEN
+    // ============================================================
+    {
+        id: '🧊 FROZEN 🧊',
+        name: '🧊 FROZEN 🧊',
+        type: 'Frozen',
+        quality: '🧊 FROZEN 🧊',
+        image: 'CategFrozen.png',
+
+        // On supprime "farms: []" et on place "products: []" directement ici
+        products: [
+            // Tu pourras ajouter tes produits Frozen directement ici, comme ceci :
+            {
+                id: '🥜❄️ Peanut Butter Fly',
+                flag: '🇲🇦',
+                name: '🥜❄️ Peanut Butter Fly',
+                farm: 'CasaSelection 🧞',
+                promoEligible: true,
+                type: 'Frozen',
+                image: 'ProductPeanut.jpg',
+                images: ['ProductPeanut1.jpg',],
+                video: 'VideoPeanut.mov',
+                description: 'Frozen Sift – Qualité / Prix au top 💸🔥\n\n Un frozen sift riche et savoureux, à la texture fine et dorée ✨        \n\n 🥜 Arômes : beurre de cacahuète crémeux, notes légèrement sucrées et toastées\n ❄️ Frozen : fraîcheur préservée, terpènes bien présents\n 🌿 Texture : sableuse, propre et fondante  \n\n  Une qualité qui frappe fort pour le prix — gourmand, efficace et accessible.',
+                tarifs: [
+                    { weight: '10g', price: 90.00 },
+                    { weight: '20g', price: 160.00 },
+                    { weight: '50g', price: 400.00 },
+                    { weight: '100g', price: 650.00 },
+                ]
+            }
+           
+        ]
+    },
+    // ============================================================
     // CATEGORIE 1 : HASH 🍫
     // ============================================================
     {
@@ -87,15 +121,65 @@ const appData = [
         farms: [
             {
                 id: 'mousseux',
-                name: '🍧 Mousseux 🍧',
+                name: '🧽 Mousseux/CaliMousse 🇺🇸',
                 image: '', // Tu pourras ajouter une image ici plus tard
-                products: []
+                products: [
+                    {
+                        id: 'Tangie Power 🍊',
+                        flag: '🇺🇸',
+                        name: 'Tangie Power 🍊',
+                        farm: '🗽 L.A Mousse',
+                        promoEligible: true,
+                        type: 'Filtrer',
+                        image: 'ProductTangie.jpg',
+                        video: 'VideoTangie.mov',
+                        description: '🇺🇸 L.A Mousse Californienne – Dry Sift ✨ \n\n Vive et lumineuse, Tangie Power séduit avec ses têtes vert éclatant et ses reflets orange flamboyants. \n Au nez, une explosion d’agrumes sucrés et de mandarine fraîche.\n  Une vibe solaire, énergique et créative.',
+                        tarifs: [
+                            { weight: '10g', price: 60.00 },
+                            { weight: '20g', price: 110.00 },
+                            { weight: '50g', price: 250.00 },
+                            { weight: '100g', price: 390.00 },
+                        ]
+                    },
+                    {
+                        id: 'Mendo Purps 🌺',
+                        flag: '🇺🇸',
+                        name: 'Mendo Purps 🌺',
+                        farm: '🗽 L.A Mousse',
+                        promoEligible: true,
+                        type: 'Filtrer',
+                        image: 'ProductMendo.jpg',
+                        video: 'VideoMendo.mov',
+                        description: '🇺🇸 L.A Mousse Californienne – Dry Sift ✨ \n\n Dense et élégante, Mendo Pups dévoile des nuances vert profond et violettes couvertes de résine brillante.\n Des arômes de raisin mûr et de baies sucrées.\n Une ambiance douce, relaxante et chaleureuse.',
+                        tarifs: [
+                            { weight: '10g', price: 60.00 },
+                            { weight: '20g', price: 110.00 },
+                            { weight: '50g', price: 250.00 },
+                            { weight: '100g', price: 390.00 },
+                        ]
+                    },
+                ]
             },
             {
                 id: 'prenium_filtred',
                 name: '🎯 Prenium filtred 🎯',
                 image: '',
                 products: [
+                    {
+                        id: '✨ 35u Mimosa 🍊',
+                        flag: '🇺🇸',
+                        name: '✨ 35u Mimosa 🍊',
+                        farm: 'Farmz KGF 🏋🏻‍♂️',
+                        promoEligible: true,
+                        type: 'Filtrer',
+                        image: 'ProductMimo.png',
+                        video: 'VideoMimo.mov',
+                        description: '💎 Type : 35u Premium \n\n Un 35 microns propre et ultra fin, signé Farmz KGF — une maison déjà bien connue pour sa constance et sa qualité 🔥\n\n 🍊 Profil : Mimosa éclatante, agrumes frais, légère touche sucrée\n ✨ Texture : poudre fine, claire et brillante (35u sélectionné)\n ❄️ Rendu : arômes nets, terpènes bien présents\n\n Franchement top — une valeur sûre, maison reconnue, qualité au rendez-vous.',
+                        tarifs: [
+                            { weight: '5g', price: 50.00 },
+                            { weight: '10g', price: 90.00 },
+                        ]
+                    },
                     {
                         id: 'Sunset Sherbet 🌅',
                         flag: '🇺🇸',
@@ -133,11 +217,27 @@ const appData = [
                 ]
             },
             {
-                id: 'frozen',
-                name: '💎 Frozen 💎',
+                id: 'Ofrozen',
+                name: '💎 Olive Frozen 💎',
                 image: '',
                 products: [
-                       {
+                    {
+                        id: '🫒✨ Jasmin Pannacota',
+                        flag: '🇲🇦',
+                        name: '🫒✨ Jasmin Pannacota',
+                        farm: 'No Farm – Frozen Premium ❄️',
+                        promoEligible: true,
+                        type: 'Filtrer',
+                        image: 'ProductPanna.jpg',
+                        video: 'VideoPanna.mov',
+                        description: 'Un bijou aromatique aux notes de jasmin floral 🌼, crème onctueuse et touche subtile d’olive. \n\n ❄️ Extraction frozen pour une fraîcheur intense\n 🌿 Arômes purs et élégants\n 💎 Texture riche et soyeuse\n\n Une création premium, douce, parfumée et délicieusement raffinée.',
+                        tarifs: [
+                            { weight: '10g', price: 120.00 },
+                            { weight: '20g', price: 220.00 },
+                            { weight: '30g', price: 330.00 },
+                        ]
+                    },
+                    {
                         id: 'Orange Bud 🍊',
                         flag: '🇲🇦',
                         name: 'Orange Bud 🍊',
@@ -347,7 +447,7 @@ const appData = [
                 products: []
             }
         ]
-    },
+    }
 ];
 
 
