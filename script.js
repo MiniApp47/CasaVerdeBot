@@ -88,6 +88,42 @@ const appData = [
         products: [
             // Tu pourras ajouter tes produits Frozen directement ici, comme ceci :
             {
+                id: '🍨❄️ Gelato 41',
+                flag: '🇲🇦',
+                name: '🍨❄️ Gelato 41',
+                farm: 'CasaSelection 🧞',
+                promoEligible: true,
+                type: 'Frozen',
+                image: 'ProductGG.jpg',
+                images: ['ProductGG1.jpg',],
+                video: 'VideoGG.mov',
+                description: 'Frozen Sift – Qualité / Prix au top 💸🔥 \n\n Un frozen sift onctueux et raffiné, à la texture fine et dorée qui reflète toute la richesse de la variété ✨  \n\n 🍦 Arômes : crème sucrée, vanille douce, notes gourmandes légèrement fruitées    \n 🍇 Touches : pointe terreuse et subtile nuance dessert \n  ❄️ Frozen : fraîcheur capturée, terpènes puissants et profonds \n 🌿 Texture : sableuse, propre et fondante à la chauffe  \n\n Une qualité qui allie gourmandise et puissance — riche en saveurs, intense dans les sensations et toujours au rendez-vous côté prix. 🔥💸',
+                tarifs: [
+                    { weight: '10g', price: 90.00 },
+                    { weight: '20g', price: 160.00 },
+                    { weight: '50g', price: 400.00 },
+                    { weight: '100g', price: 650.00 },
+                ]
+            },
+            {
+                id: '🌴❄️ Tropicali',
+                flag: '🇲🇦',
+                name: '🌴❄️ Tropicali',
+                farm: '🛫 Fly Farmz 🛫',
+                promoEligible: true,
+                type: 'Frozen',
+                image: 'ProductTropipi.jpg',
+                images: ['ProductTropipi1.jpg',],
+                video: 'VideoTropipi.mov',
+                description: 'Frozen Sift – Qualité / Prix au top 💸🔥\n Par Fly Farmz  \n\n  Un frozen sift éclatant et savoureux, à la texture fine et dorée qui brille sous la lumière ✨  \n 🍊 Arômes : agrumes frais, mangue mûre, notes sucrées et légèrement acidulées \n ❄️ Frozen : fraîcheur préservée, terpènes intenses et bien définis \n 🌿 Texture : sableuse, propre et fondante  \n\n Une qualité qui frappe fort pour le prix — exotique, vibrant et accessible. 🌴🔥💸',
+                tarifs: [
+                    { weight: '10g', price: 90.00 },
+                    { weight: '20g', price: 160.00 },
+                    { weight: '50g', price: 400.00 },
+                    { weight: '100g', price: 650.00 },
+                ]
+            },
+            {
                 id: '🥜❄️ Peanut Butter Fly',
                 flag: '🇲🇦',
                 name: '🥜❄️ Peanut Butter Fly',
